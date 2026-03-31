@@ -1,6 +1,7 @@
 
 
 Cook-CoOp provides minimal implementation for:
+
 - A physics-based kitchen simulator supporting multiple cooperative players
 - A [Gymnasium](https://gymnasium.farama.org/) environment wrapper for RL training
 - A complete [PPO](https://arxiv.org/abs/1707.06347) self-play training pipeline with 64 parallel environments
@@ -57,10 +58,10 @@ pip install -r requirements.txt
 
 ```bash
 # CPU
-docker-compose up container-cpu
+docker compose up container-cpu
 
 # GPU (requires NVIDIA GPU and NVIDIA Container Toolkit)
-docker-compose up container-gpu
+docker compose up container-gpu
 ```
 
 ## Training

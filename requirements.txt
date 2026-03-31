@@ -1,0 +1,5 @@
+gymnasium==1.2.3
+numpy==2.4.4
+pyglet==2.1.13
+torch==2.11.0
+tyro==1.0.11

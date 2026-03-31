@@ -1,0 +1,19 @@
+{
+    "name": "Cook-CoOp",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "container-cpu",
+    "runServices": [
+        "container-cpu"
+    ],
+    "workspaceFolder": "/app",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.black-formatter"
+            ]
+        }
+    },
+    "postCreateCommand": "pip install black"
+}

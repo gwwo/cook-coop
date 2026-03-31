@@ -1,4 +1,4 @@
-# Cook-CoOp
+
 
 Cook-CoOp provides minimal implementation for:
 - A physics-based kitchen simulator supporting multiple cooperative players

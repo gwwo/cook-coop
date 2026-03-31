@@ -4,7 +4,7 @@ Cook-CoOp provides minimal implementation for:
 - A physics-based kitchen simulator supporting multiple cooperative players
 - A [Gymnasium](https://gymnasium.farama.org/) environment wrapper for RL training
 - A complete [PPO](https://arxiv.org/abs/1707.06347) self-play training pipeline with 64 parallel environments
-- A Pyglet UI for interactive visualization and human play
+- A [Pyglet](https://github.com/pyglet/pyglet) UI for interactive visualization and human play
 
 <br>
 

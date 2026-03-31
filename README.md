@@ -1,23 +1,30 @@
 # Cook-CoOp
 
-A cooperative multiplayer cooking simulation game with reinforcement learning. Agents are trained using PPO to coordinate in a kitchen environment, inspired by Overcooked-style cooperative gameplay.
-
-<p align="center">
-  <img src="assets/trained-selfplay-1.gif" width="90%">
-</p>
-
-## Overview
-
 Cook-CoOp provides minimal implementation for:
 - A physics-based kitchen simulator supporting multiple cooperative players
 - A [Gymnasium](https://gymnasium.farama.org/) environment wrapper for RL training
-- A complete PPO training pipeline with 64 parallel environments
+- A complete [PPO](https://arxiv.org/abs/1707.06347) self-play training pipeline with 64 parallel environments
 - A Pyglet UI for interactive visualization and human play
 
+<br>
+
 <p align="center">
-  <img src="assets/trained-selfplay-2.gif" width="90%">
+  <img src="assets/trained-selfplay-1.gif" width="80%">
 </p>
 
+<p align="center">
+  <img src="assets/trained-selfplay-2.gif" width="80%">
+</p>
+
+<p align="center">
+  <img src="assets/trained-selfplay-3.gif" width="80%">
+</p>
+
+## Acknowledgement
+
+Only the visual assets in `game_ui/assets/` are sourced from [HumanCompatibleAI/overcooked_ai](https://github.com/HumanCompatibleAI/overcooked_ai).
+
+The game engine and UI rendering are built from scratch. Unlike `overcooked_ai`'s grid-based design, Cook-CoOp uses continuous 2D movement with AABB (axis-aligned bounding box) collision resolution, enabling physically realistic player–object interactions rather than tile-by-tile stepping.
 
 ## Project Structure
 
@@ -31,17 +38,6 @@ cook-coop/
 ├── ppo_train.py    # PPO training script
 └── play.py         # Load a trained agent and watch it play
 ```
-
-<p align="center">
-  <img src="assets/trained-selfplay-3.gif" width="90%">
-</p>
-
-
-## Acknowledgement
-
-The visual assets in `game_ui/assets/` are sourced from [HumanCompatibleAI/overcooked_ai](https://github.com/HumanCompatibleAI/overcooked_ai).
-
-The game core engine is built from scratch and differ fundamentally from that project. `overcooked_ai` is a grid-based game; Cook-CoOp uses continuous 2D movement with an AABB (axis-aligned bounding box) collision resolution algorithm, enabling physically plausible players-objects interaction rather than tile-by-tile stepping.
 
 
 ## Environment Setup
